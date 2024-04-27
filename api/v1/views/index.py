@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""A module that contains the index view"""
 from flask import jsonify
 from api.v1.views import app_views
 
