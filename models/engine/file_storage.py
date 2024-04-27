@@ -71,7 +71,7 @@ class FileStorage:
 
     def get(self, cls, id):
         """retrieve one object"""
-        if cls is not None:
+        if cls is not None and issubclass(cls, BaseModel):
             match = list(filter(lambda y: type(y) is cls
                                 and y.id == id, self.__objects.values()))
             if match:
