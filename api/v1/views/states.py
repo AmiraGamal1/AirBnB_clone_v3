@@ -26,7 +26,6 @@ def handle_state(id_state=None):
         raise MethodNotAllowed(list(handler_dict.keys()))
 
 
-
 def get_state(id_state=None):
     """get state with the given id"""
     all_states = storage.all(State).values()
